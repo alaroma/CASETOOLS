@@ -1,8 +1,8 @@
 /**
- * nice.c -- программа для наложения фильтров на 
+ * filter.c -- программа для наложения фильтров на 
  * изображение в формате BMP
  *
- * Copyright (c) 2009, Student Name <remeslen@cs.petrsu.ru>
+ * Copyright (c) 2009, Artamonova Alyona <aartamon@cs.petrsu.ru>
  *
  * This code is licensed under a MIT-style license.
  */ 
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 {     
     bmp_image image;
     
-    if (argc < 3) {
+    if (argc != 3) {
         fprintf(stderr, "Usage: %s sourcefile destfile\n", argv[0]);
         exit(EXIT_FAILURE);
     }
